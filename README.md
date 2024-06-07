@@ -1,30 +1,69 @@
-# React + TypeScript + Vite
+# 🚀 Ignite Feed
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ignite Feed é uma aplicação de rede social simples onde os usuários podem postar atualizações e receber comentários. Este projeto foi desenvolvido utilizando tecnologias modernas como React, Vite, TypeScript, Styled-components, Phosphor-react e Date-fns. A aplicação é parte do evento NLW da Rocketseat.
 
-Currently, two official plugins are available:
+## 🛠️ Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **Vite**: Ferramenta de construção que fornece um ambiente de desenvolvimento rápido para projetos React.
+- **TypeScript**: Superset do JavaScript que adiciona tipos estáticos.
+- **Styled-components**: Biblioteca para estilização de componentes React utilizando tagged template literals.
+- **Phosphor-react**: Conjunto de ícones flexíveis para interfaces de usuário React.
+- **Date-fns**: Biblioteca para manipulação e formatação de datas.
 
-## Expanding the ESLint configuration
+## ✨ Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Postagens**: Usuários podem criar postagens com texto e links.
+- **Comentários**: Os usuários podem comentar nas postagens, e esses comentários podem ser deletados ou aplaudidos.
+- **Sidebar**: Inclui informações do perfil do usuário e um botão para editar o perfil.
+- **Header**: Contém o logo da aplicação e o título "Ignite Feed".
 
-- Configure the top-level `parserOptions` property like this:
+## 📁 Estrutura do Projeto
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+src/
+<br/>
+|-- Components/
+<br/>
+| |-- Avatar/
+<br/>
+| |-- Comment/
+<br/>
+| |-- Header/
+<br/>
+| |-- Post/
+<br/>
+| |-- Sidebar/
+<br/>
+|-- assets/
+<br/>
+|-- styles/
+<br/>
+|-- App.tsx
+<br/>
+|-- GlobalStyles.ts
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+## 🚀 Como Executar o Projeto
+
+1. **Clone o repositório:**
+
+   ```bash
+   git clone 
+
+cd ignite-feed
+npm install
+
+npm run dev
+
+## Acesse no navegador:
+
+- **Abra http://localhost:3000 para ver a aplicação em execução.
+
+- 🤝 Contribuições
+- Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e enviar pull requests para melhorias e correções de bugs.
+
+- 📞 Contato
+- Nome: Andrew Henrique
+- LinkedIn: /andrewchucrute
+- GitHub: andrewhenrique2
+
