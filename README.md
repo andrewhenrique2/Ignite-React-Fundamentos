@@ -1,6 +1,6 @@
 # 🚀 Ignite Feed
 
-Ignite Feed é uma aplicação de rede social simples onde os usuários podem postar atualizações e receber comentários. Este projeto foi desenvolvido utilizando tecnologias modernas como React, Vite, TypeScript, Styled-components, Phosphor-react e Date-fns. A aplicação é parte do evento NLW da Rocketseat.
+Ignite Feed é uma aplicação de rede social simples onde os usuários podem postar atualizações e receber comentários. Este projeto foi desenvolvido utilizando tecnologias modernas como React, Vite, TypeScript, Styled-components, Phosphor-react e Date-fns. Este é um projeto desenvolvido durante o curso Ignite React da Rocketseat.
 
 <a href="https://ignite-react-fundamentos-01-2lx9bp6id-andrewhenrique2s-projects.vercel.app" target="_blank">Acesse o site em funcionamento</a>
 
