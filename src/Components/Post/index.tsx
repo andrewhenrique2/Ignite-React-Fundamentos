@@ -5,6 +5,14 @@ import { Container } from "./styles";
 import { format, formatDistanceToNow } from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR';
 
+// Custom locale object
+const customLocale = {
+  ...ptBR,
+  formatDistance: ptBR.formatDistance || ((token, count, options) => ""),
+  localize: ptBR.localize || ((...args) => args),
+  formatLong: ptBR.formatLong || ((...args) => args)
+};
+
 interface Author {
     name: string;
     role: string;
@@ -25,21 +33,17 @@ interface PostProps {
 export function Post({author, content, publishedAt}: PostProps) {
     const [newCommentText, setNewCommentText] = useState('');
     const [comments, setComments] = useState([
-       'Gostei muito do post!',
-       'quibusdam fugit neque consequatur et necessitatibus incidunt atque.'
-   
-
-
+       'Post muito bacana, hein!'
     ]);
 
     const publishedDate = new Date(publishedAt); 
 
     const publishedDateFormatted = format(publishedDate, "d 'de' LLLL 'às' HH:mm'h'", { 
-        locale: ptBR,
+        locale: customLocale,
     });
 
     const publishedDateRelativeToNow = formatDistanceToNow(publishedDate, { 
-        locale: ptBR,
+        locale: customLocale,
         addSuffix: true,
     });
 
