@@ -73,7 +73,19 @@ export const Container = styled.div`
     border-radius: 2px;
     display: flex;
     align-items: center;
-
 }
+
+.commentBox footer, button, svg {
+    margin-right: 0.5rem;
+}
+
+.commentBox footer, button, span {
+    padding: 0 0.25rem;
+}
+
+.commentBox footer button:focus {
+    outline: transparent;
+    box-shadow: 0 0 0 2px var(--green-500);
+  }
 
 `;
