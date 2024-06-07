@@ -2,6 +2,9 @@
 
 Ignite Feed é uma aplicação de rede social simples onde os usuários podem postar atualizações e receber comentários. Este projeto foi desenvolvido utilizando tecnologias modernas como React, Vite, TypeScript, Styled-components, Phosphor-react e Date-fns. A aplicação é parte do evento NLW da Rocketseat.
 
+<a href="https://ignite-react-fundamentos-01-2lx9bp6id-andrewhenrique2s-projects.vercel.app" target="_blank">Acesse o site em funcionamento</a>
+
+
 ![localhost_5173_](https://github.com/andrewhenrique2/Ignite-React-Fundamentos/assets/103382295/b1092948-5063-40da-9937-1631677307f9) ![iPhone-13-PRO-localhost](https://github.com/andrewhenrique2/Ignite-React-Fundamentos/assets/103382295/c7acfd63-565c-4099-af16-b3678f41392c)
 
 ## 🛠️ Tecnologias Utilizadas
