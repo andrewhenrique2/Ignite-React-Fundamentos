@@ -3,15 +3,6 @@ import { Avatar } from "../Avatar";
 import { Comment } from "../Comment";
 import { Container } from "./styles";
 import { format, formatDistanceToNow } from 'date-fns';
-import ptBR from 'date-fns/locale/pt-BR';
-
-// Custom locale object
-const customLocale = {
-  ...ptBR,
-  formatDistance: ptBR.formatDistance || ((token, count, options) => ""),
-  localize: ptBR.localize || ((...args) => args),
-  formatLong: ptBR.formatLong || ((...args) => args)
-};
 
 interface Author {
     name: string;
@@ -38,12 +29,9 @@ export function Post({author, content, publishedAt}: PostProps) {
 
     const publishedDate = new Date(publishedAt); 
 
-    const publishedDateFormatted = format(publishedDate, "d 'de' LLLL 'às' HH:mm'h'", { 
-        locale: customLocale,
-    });
+    const publishedDateFormatted = format(publishedDate, "d 'de' LLLL 'às' HH:mm'h'");
 
     const publishedDateRelativeToNow = formatDistanceToNow(publishedDate, { 
-        locale: customLocale,
         addSuffix: true,
     });
 
@@ -87,7 +75,7 @@ export function Post({author, content, publishedAt}: PostProps) {
                             <span>{author.role}</span>
                         </div>
                     </div>
-                    <time title={publishedDateFormatted} dateTime={publishedDate.toISOString()}> {/* Modificado */}
+                    <time title={publishedDateFormatted} dateTime={publishedDate.toISOString()}>
                         {publishedDateRelativeToNow}
                     </time>
                 </header>
