@@ -74,3 +74,5 @@ npm run dev
 - LinkedIn: /andrewchucrute
 - GitHub: andrewhenrique2
 
+![image](https://github.com/andrewhenrique2/Ignite-React-Fundamentos/assets/103382295/26b562b2-bd1a-4f4d-99c3-8aa26bf103ce)
+
